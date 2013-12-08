@@ -13,6 +13,8 @@ import android.util.Log;
  */
 public class Feed extends FeedEntity {
 	
+	private static final long serialVersionUID = 1L;
+
 	public Feed(Attributes attributes) {
 		super(attributes);
 	}

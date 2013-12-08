@@ -1,5 +1,6 @@
 package com.tinymission.rss;
 
+import java.io.Serializable;
 import java.lang.reflect.Method;
 
 import org.xml.sax.Attributes;
@@ -10,9 +11,10 @@ import android.util.Log;
 /** Base class for feed entities that provides automatic property assignment.
  *
  */
-public class FeedEntity {
+public class FeedEntity implements Serializable {
 	
-	
+	private static final long serialVersionUID = 1L;
+
 	public FeedEntity(Attributes attributes) {
 		if (attributes != null) {
 			for (int i=0; i < attributes.getLength(); i++) {

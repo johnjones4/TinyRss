@@ -4,6 +4,8 @@ import org.xml.sax.Attributes;
 
 public class MediaThumbnail extends FeedEntity {
 
+	private static final long serialVersionUID = 1L;
+
 	public MediaThumbnail(Attributes attributes) {
 		super(attributes);
 	}

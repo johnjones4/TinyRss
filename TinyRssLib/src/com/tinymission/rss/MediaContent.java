@@ -4,6 +4,7 @@ import org.xml.sax.*;
 
 public class MediaContent extends FeedEntity {
 
+	private static final long serialVersionUID = 1L;
 	
 	private String url;
 	private String type;
